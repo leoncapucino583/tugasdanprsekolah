@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas-Tugas Sekolah</title>
+    <link rel="icon" href="pencil-removebg-preview.png">
+
+    <style>
+        body{
+            font-family: 'Segoe UI Variable Display', sans-serif;
+            background-color: rgb(0, 3, 61);
+            color: white;
+        }
+
+        h1{
+            margin-left: 8px;
+            animation-name: masuk;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        .tugas{
+            background-color: rgb(0, 7, 143);
+            padding: 15px;
+            margin: 8px;
+            width:750px;
+            border-radius: 15px;
+            animation-name: masuk;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            transition: 0.5s;
+        }
+
+        .tugas:hover{
+            margin-left: 16px;
+            background-color: rgb(54, 58, 129);
+        }
+
+        .tugas-deadline1hl{
+            background-color: rgb(0, 7, 143);
+            padding: 15px;
+            margin: 8px;
+            width: 750px;
+            color: rgb(255, 0, 0);
+            border-radius: 15px;
+            animation-name: masuk;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            transition: 0.5s;
+        }
+
+         .tugas-deadline1hl:hover{
+            color: rgb(255, 106, 106);
+            margin-left: 16px;
+            background-color: rgb(54, 58, 129);
+        }
+
+        #peringatan{
+            margin: 8px;
+            animation-name: masuk;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        @media (max-width: 612px) {
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .tugas{
+                background-color: rgb(0, 7, 143);
+                padding: 5px;
+                margin: 2px;
+                width: 250px;
+                border-radius: 5px;
+                animation-name: masuk;
+                animation-duration: 1s;
+                font-size: xx-small;
+                animation-timing-function: ease-out;
+            }
+
+            #peringatan{
+                margin: 2px;
+                animation-name: masuk;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                font-size: xx-small;
+                width: 100px;
+
+            }
+
+            .tugas-deadline1hl{
+                background-color: rgb(0, 7, 143);
+                padding: 5px;
+                margin: 2px;
+                width: 250px;
+                color: rgb(255, 0, 0);
+                border-radius: 5px;
+                animation-name: masuk;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                font-size: xx-small;
+            }
+
+            h1{
+                margin-left: 2px;
+                animation-name: masuk;
+                animation-duration: 1s;
+                animation-timing-function: ease-out;
+                font-size: medium;
+            }
+        }
+
+        @keyframes masuk {
+            from{
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tugas-tugas / Pekerjaan Rumah:</h1>
+
+    <!-- format -->
+    <!--<div class="tugas">
+            <h2>Mapel Tugas</h2>
+            <p>Deskripsi Tugas | Tanggal kumpul</p>
+        </div>  -->
+
+    <!-- jika deadline sisa 1 hari lagi, renam class div menjadi "tugas-deadline1hl" dan tambahlan di konten div: <p>1 HARI LAGI</p> -->
+
+    <div class="tugas-deadline1hl">
+        <h2>Pendidikan Agama dan Budi Pekerti</h2>
+        <p>Kerja Kelompok | 12 Agustus 2026 11:10 | <b>catatan:</b> ini untuk yang belum selesai</p>
+        <p>1 HARI LAGI</p>
+    </div>
+    <div class="tugas-deadline1hl">
+        <h2>Koding dan Kecerdasan Artifisial</h2>
+        <p>Latihan Flowchart | 12 Agustus 2026 09:45</p>
+        <p>1 HARI LAGI</p>
+    </div>
+    <div class="tugas">
+        <h2>Pendidikan Pancasila</h2>
+        <p>Buku Kliping tentang rasa cinta tanah air | Akhir Agustus / Awal September 2026</p>
+    </div>
+    <div class="tugas">
+        <h2>Ilmu Pengetahuan Alam dan Sosial</h2>
+        <p>HOTS Hal.19 | 13 Agustus 2026</p>
+    </div>
+    <br><br><br><br>
+    <p id="peringatan"><b>ingat!</b> website ini <i>bukan</i> milik guru. bisa saja ada kesalahan tulis atau ada yang kurang.</p>
+    <p id="peringatan">jika ada yang salah atau kurang, <a href="errro.txt" target="_blank">bisa diperbaiki dengan mengklik ini.</a></p>
+</body>
+</html>
